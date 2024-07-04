@@ -10,11 +10,12 @@ const Header = () => {
         <nav className="space-x-4">
           <ul>
 
-            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="">Home</a></li>
-            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="">Home</a></li>
-            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="">Home</a></li>
-            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="">Home</a></li>
-            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="">Home</a></li>
+            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="/">Home</a></li>
+            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="/portfolio">Portfolio</a></li>
+            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="/timeline">Timeline</a></li>
+            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="/about">About</a></li>
+            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="/blog">Blog</a></li>
+            <li className="hidden sm:inline mr-3 text-white-700 hover:underline"><a href="/contact">Contact</a></li>
            
           </ul>
         </nav>
