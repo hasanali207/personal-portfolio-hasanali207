@@ -18,7 +18,7 @@ const rotatingImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, im
 const Skills = () => {
   return (
     <div className="relative w-full h-[80vh] flex justify-center items-center">
-       
+        
       <div className="absolute w-24 h-24 md:w-16 md:h-16 rounded-full bg-white flex justify-center items-center">
         <img src={img1} alt="center" className="rounded-full" />
       </div>
