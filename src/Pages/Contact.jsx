@@ -31,7 +31,7 @@ const Contact = () => {
 
 
   return (
-    <div>
+    <div className="z-0">
       
       <div className="flex justify-center items-center min-h-32 bg-slate-200">
             <h1 className= "animate__animated uppercase animate__flash text-slate-600 font-bold text-3xl">Contact Me</h1>

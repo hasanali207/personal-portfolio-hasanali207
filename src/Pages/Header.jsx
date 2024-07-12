@@ -4,27 +4,27 @@ const Header = () => {
 
   const navitems = (
     <>
-      <li className="hidden sm:inline mr-3 text-white-700 hover:underline">
+      <li className=" mr-3 text-white-700 hover:underline">
         <a href="/">Home</a>
       </li>
-      <li className="hidden sm:inline mr-3 text-white-700 hover:underline">
+      <li className="mr-3 text-white-700 hover:underline">
         <a href="/portfolio">Portfolio</a>
       </li>
-      <li className="hidden sm:inline mr-3 text-white-700 hover:underline">
+      <li className="mr-3 text-white-700 hover:underline">
         <a href="/timeline">Timeline</a>
       </li>
-      <li className="hidden sm:inline mr-3 text-white-700 hover:underline">
+      <li className="mr-3 text-white-700 hover:underline">
         <a href="/about">About</a>
       </li>
      
-      <li className="hidden sm:inline mr-3 text-white-700 hover:underline">
+      <li className="mr-3 text-white-700 hover:underline">
         <a href="/contact">Contact</a>
       </li>
     </>
   );
 
   return (
-    <div className="navbar bg-gradient-to-r from-teal-500 to-blue-900 text-white p-4 shadow-md relative">
+    <div className="navbar bg-gradient-to-r from-teal-500 to-blue-900 p-4 shadow-md relative">
       <div className="navbar-start">
         <div className="dropdown z-50">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,14 +43,14 @@ const Header = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1]   mt-3 w-52 p-2 shadow relative">
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow relative">
             {navitems}
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">HasanAli</a>
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-white">
           {navitems}
         </ul>
       </div>
