@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+  font-family: 'Inter', sans-serif;
+  
+}
+.body-background{
+  background: radial-gradient(600px at 841px 298px, rgba(29, 78, 216, 0.15), transparent 80%);
+  
+}
+.btn-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
