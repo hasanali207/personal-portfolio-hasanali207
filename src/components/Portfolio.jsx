@@ -7,11 +7,13 @@ import portfolio3 from '../assets/img/port3.png';
 
 const Portfolio = () => {
   return (
-   <>
-    <div className=''>
-              <h2 className='text-4xl uppercase text-center font-semibold text-slate-600 my-10'>Recent Project</h2>
-              
-            </div>  
+   <div className='bg-[#0a192f]'>
+
+<div className="flex justify-center items-center ">
+      <div className="text-5xl leading-tight font-bold gradient-text py-4 ">
+        Latest Work
+        </div>
+      </div>
     <div className=' max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 lg:p-0'>
         {/* portfolio 1  */}
         <div className='bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full'>
@@ -244,7 +246,7 @@ admin and another one is moderator.
         </div>
                 
     </div>
-   </>
+   </div>
   );
 };
 

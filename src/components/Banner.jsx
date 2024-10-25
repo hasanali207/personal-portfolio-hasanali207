@@ -11,7 +11,7 @@ export default function Banner() {
           I am HasanAli
         </div>
         <div className="text-6xl leading-tight font-bold gradient-text py-4 ">
-        Web Developer,  <br /> Wordpress Expert .
+        Front End Developer .
         </div>
         <div className="mt-6">
           <a className='mr-4' href="/contact"><button>CONTACT ME</button></a>

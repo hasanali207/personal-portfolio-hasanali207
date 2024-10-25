@@ -2,11 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="p-10 section sec2 about"  id="about">
+    <section className="p-10 bg-[#0a192f] section sec2 about"  id="about">
       <div className="flex justify-center items-center ">
-        <h2 className="text-4xl text-center font-semibold text-slate-600">
-          ABOUT <span>ME</span>
-        </h2>
+      <div className="text-5xl leading-tight font-bold gradient-text py-4 ">
+        About Me
+        </div>
       </div>
       <div className="about-container grid grid-cols-1 lg:grid-cols-2 gap-8 py-14">
         <div className="left-about pr-0 lg:pr-20">

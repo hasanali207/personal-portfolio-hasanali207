@@ -11,21 +11,15 @@ const Home = () => {
     <div>
         <Banner></Banner>
 
-   
-       <section>
-       <div className='bg-slate-200 shadow-md mx-auto py-10'>
+              
        
           <Portfolio></Portfolio>
-        </div>
-       </section>
+       
+       
         
 
-        <section id='skills'>
-        <div className='flex justify-center items-center pt-10 pb-8'>
-        <h2 className='text-4xl uppercase text-center font-semibold text-slate-600'>Skills</h2>
-        </div>
-
-        <Skills></Skills>
+        <section  id='skills'>
+         <Skills></Skills>
         </section>
 
         <div className='bg-slate-200'>
