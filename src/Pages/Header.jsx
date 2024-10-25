@@ -1,31 +1,32 @@
 import React from 'react';
-
+import logo from '../assets/logo1.png';
+import { Link } from 'react-router-dom';
 const Header = () => {
 
   const navitems = (
     <>
      
-      <li className="mr-3 text-white-700 hover:underline">
+      <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
         <a href="/portfolio">Portfolio</a>
       </li>
-      <li className="mr-3 text-white-700 hover:underline">
+      <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
         <a href="/timeline">Timeline</a>
       </li>
-      <li className="mr-3 text-white-700 hover:underline">
+      <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
         <a href="/about">About</a>
       </li>
      
-      <li className="mr-3 text-white-700 hover:underline">
+      <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
         <a href="/contact">Contact</a>
       </li>
     </>
   );
 
   return (
-    <div className="navbar  p-4 shadow-md relative bg-[#0a192f] h-[92px]">
+    <div className="navbar flex justify-between  p-4 shadow-md relative bg-[#0a192f] h-[92px]">
       <div className="navbar-start">
         <div className="dropdown z-50">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn text-white btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -41,16 +42,22 @@ const Header = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow relative">
+            className="menu menu-full dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow relative">
             {navitems}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">HasanAli</a>
+        <Link to={'/'} className=" flex items-center"> <img className='w-24 h-24 flex items-center' src={logo} alt="" />  <span className='lg:flex sm:hidden  text-white hover:text-[#757575]'> hasandevpro@gmail.com </span>  </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-white">
           {navitems}
         </ul>
+      </div>
+
+      <div>
+        <button className="text-2xl font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient w-36 ">
+          <Link to={'/contact'}>Hire Me</Link>
+        </button>
       </div>
     </div>
   );
