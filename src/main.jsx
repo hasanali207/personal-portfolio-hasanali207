@@ -7,7 +7,6 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 
 import {
-  createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import router from './Routes/Routes.jsx';

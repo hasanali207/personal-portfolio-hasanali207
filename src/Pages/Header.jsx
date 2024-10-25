@@ -55,7 +55,7 @@ const Header = () => {
       </div>
 
       <div>
-        <button className="text-2xl font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient w-36 ">
+        <button className="text-2xl font-bold  gradient-text w-36 ">
           <Link to={'/contact'}>Hire Me</Link>
         </button>
       </div>
