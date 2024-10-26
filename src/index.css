@@ -65,14 +65,44 @@ body{
   border-radius: 25px;
 }
 .icon-box img {
-  filter: grayscale(90%)
+  filter: grayscale(90%);
+  transition: 0.3s;
 }
 .skill-item:hover .icon-box img{
   filter: grayscale(0);
-  transition: 0.3s all ease-in-out;
+  
   transform: scale(1.1);
+  
 }
 
+
+/* hero seciton  */
+.hero-image{
+border-radius: 38px; 
+width: 100%;
+ /* height: 450px; */
+ height: 70vh;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ transition: 0.4s;
+ border: 2px solid #8750f7;
+  transform: rotate(4.29deg);
+  margin-right: 100px;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 38px;  
+  transition: 0.4s;
+}
+.hero-image:hover{
+  border: 2px solid #8750f7;
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: rotate(-4deg) translate;
+}
 
 
 

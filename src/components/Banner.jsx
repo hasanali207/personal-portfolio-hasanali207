@@ -1,10 +1,10 @@
 import React from 'react'
-
+import heroimage from '../assets/img/heroimage.png'
 export default function Banner() {
   return (
     <>
 
-<section className="z-0 h-[90vh] bg-[#0a192f] text-white p-8  flex justify-between items-center">
+<section className="z-0 h-[90vh] bg-[#0a192f] text-white p-8  flex justify-center items-center">
       <div className="container mx-auto">
         <div className="text-5xl font-bold mb-4">
           
@@ -20,7 +20,10 @@ export default function Banner() {
       </div>
 
       <div>
-
+          <div className='hero-image flex justify-center items-center'>
+            <img  src={heroimage} alt="profile-pic" className="align-middle"/>
+          </div>
+          
       </div>
     </section>
     </>
