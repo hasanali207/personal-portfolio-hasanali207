@@ -33,20 +33,20 @@ const Contact = () => {
   return (
     <div className="z-0">
       
-      <div className="flex justify-center items-center min-h-32 bg-slate-200">
-            <h1 className= "animate__animated uppercase animate__flash text-slate-600 font-bold text-3xl">Contact Me</h1>
-      </div>    
-      <section className="py-10">
-        <div className="grid grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2  ">
-          <div data-aos="fade-right" className="py-6 md:py-0 md:px-6">
-            <p className="pt-2 pb-4 text-2xl text-slate-600">
-              Fill in the form to start a conversation
+      <div className="">
+      <p className="pt-2 pb-4 text-5xl text-white leading-tight font-bold gradient-text py-4 ">
+            Let’s work together!
             </p>
-            <p className="pt-2 pb-4 text-xl text-slate-600">
-              Find Out here
+            <p className="pt-2 pb-4 text-lg text-white">
+            I design and code beautifully simple things and i love what i do. <br/> Just simple like that!
             </p>
+      </div>   
+      <section className="">
+        <div className="flex justify-between flex-row-reverse gap-5  ">
+          <div data-aos="fade-right" className=" mt-6 w-1/2">
+            
             <div className="space-y-4">
-              <p className="flex items-center">
+              <p className="flex items-center text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -61,7 +61,7 @@ const Contact = () => {
                 </svg>
                 <span>Gulshan-1, Dhaka-1212, Bangladesh</span>
               </p>
-              <p className="flex items-center">
+              <p className="flex items-center text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -72,7 +72,7 @@ const Contact = () => {
                 </svg>
                 <span>+8801861026837</span>
               </p>
-              <p className="flex items-center">
+              <p className="flex items-center text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -87,53 +87,66 @@ const Contact = () => {
 
               
             </div>
-            <div className="flex space-x-4 mt-10"> 
-                  <a className="text-4xl text-teal-500 " href=""><FaGithub />
+            <div className="flex space-x-4 mt-10 "> 
+                  <a className="text-4xl text-white " href="https://github.com/hasanali207/"><FaGithub />
                   </a>
-                  <a  className="text-4xl text-teal-500"  href=""><FaLinkedin   /></a>
-                  <a  className="text-4xl text-teal-500"  href=""><FaFacebookSquare />
+                  <a  className="text-4xl text-white"  href="https://www.linkedin.com/in/hasanali207/"><FaLinkedin   /></a>
+                  <a  className="text-4xl text-white"  href="https://www.facebook.com/hasanali142228/"><FaFacebookSquare />
                   </a>
               </div>
           </div>
          
-          <form ref={form} onSubmit={sendEmail} class="mx-auto p-6 w-full bg-white rounded-lg shadow-md">
-  <div class="mb-4">
-    <label class="block text-slate-600 text-sm font-bold mb-2" for="user_name">Name</label>
+          <form ref={form} onSubmit={sendEmail} className="mx-auto p-6 w-1/2">
+   <div className="grid grid-cols-2 gap-3">     
+  <div className="mb-4">
+    
     <input
       type="text"
       name="user_name"
-      class="w-full shadow appearance-none focus:border-teal-200 border rounded py-2 px-3 text-slate-700 "
+      placeholder="Name"
+      className="w-full py-3 pl-4  border rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7]  focus:border-solid"
     />
   </div>  
-  <div class="mb-4">
-    <label class="block text-sm text-slate-600 font-bold mb-2" for="user_email">Email</label>
+  <div className="mb-4">
+    
     <input
       type="email"
       name="user_email" 
-      class="shadow appearance-none border rounded w-full py-2 px-3"
+      placeholder="Email"
+      className="border text-white   w-full  py-3 pl-4  rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7] "
     />
   </div>
-  <div class="mb-4">
-    <label class="block text-slate-600 text-sm font-bold mb-2" for="subject">Subject</label>
+  <div className="mb-4">
     <input
       type="text"
       name="subject" 
-      class="shadow appearance-none border rounded w-full py-2 px-3 text-slate-700"
+      placeholder="Subject"
+       className="border text-white   w-full py-3 pl-4  rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7] "
     />
   </div>
-  <div class="mb-4">
-    <label class="block  text-slate-600 text-sm font-bold mb-2" for="message">Message</label>
+  <div className="mb-4">
+    <input
+      type="text"
+      name="phone" 
+      placeholder="phone"
+      className="border text-white   w-full py-3 pl-4  rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7] "
+    />
+  </div>
+  <div className="mb-4 col-span-full">
     <textarea
       name="message"
-      class="shadow appearance-none border rounded w-full py-2 px-3 text-slate-700"
+      placeholder="Message"
+       className="border  text-white   w-full py-3 pl-4 rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7]   "
       rows="4"
     ></textarea>
   </div>
-  <div class="flex items-center justify-between">
+  </div>  
+
+  <div className="flex items-center justify-between">
     <input
       type="submit"
-      value="Send"
-      class="bg-teal-500 hover:bg-blue-500 cursor-pointer text-lg text-slate-200   font-bold px-8 py-2 rounded"
+      value="Send Message"
+      className="font-medium px-8 py-4 w-44 rounded-3xl text-white custom-gradient cursor-pointer"
     />
   </div>
 </form>

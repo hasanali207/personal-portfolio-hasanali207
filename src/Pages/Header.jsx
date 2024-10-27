@@ -23,8 +23,8 @@ const Header = () => {
   );
 
   return (
-    <div className="navbar flex justify-between  p-4 shadow-md relative bg-[#0a192f] h-[92px]">
-      <div className="navbar-start">
+    <div className="navbar px-20 flex justify-between  p-4 shadow-md relative bg-[#0a192f] h-[92px]">
+      <div className="navbar-start ">
         <div className="dropdown z-50">
           <div tabIndex={0} role="button" className="btn text-white btn-ghost lg:hidden">
             <svg
