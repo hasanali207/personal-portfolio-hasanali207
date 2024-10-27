@@ -1,23 +1,31 @@
 import React from 'react';
 import logo from '../assets/logo1.png';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
 
   const navitems = (
     <>
      
-      <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
-        <a href="/portfolio">Portfolio</a>
+      <li className="mr-3 text-lg text-white-700 ">
+        <NavLink className={({ isActive }) =>
+              isActive ? 'text-[#757575] focus:text-[#757575] ' : 'hover:text-[#757575]'
+            } to="/portfolio">Portfolio</NavLink>
+      </li>
+      <li className="mr-3 text-lg  ">
+        <NavLink className={({ isActive }) =>
+              isActive ? 'text-[#757575] focus:text-[#757575]' : 'hover:text-[#757575]'
+            } to="/timeline">Timeline</NavLink>
       </li>
       <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
-        <a href="/timeline">Timeline</a>
-      </li>
-      <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
-        <a href="/about">About</a>
+        <NavLink className={({ isActive }) =>
+              isActive ? 'text-[#757575] focus:text-[#757575]' : 'hover:text-[#757575]'
+            } to="/about">About</NavLink>
       </li>
      
       <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
-        <a href="/contact">Contact</a>
+        <NavLink className={({ isActive }) =>
+              isActive ? 'text-[#757575] focus:text-[#757575]' : 'hover:text-[#757575]'
+            } to="/contact">Contact</NavLink>
       </li>
     </>
   );
