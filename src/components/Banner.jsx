@@ -20,7 +20,7 @@ export default function Banner() {
       </div>
 
       <div>
-          <div className='hero-image flex justify-center items-center'>
+          <div className='hero-image flex justify-center items-center gradient-border'>
             <img  src={heroimage} alt="profile-pic" className="align-middle"/>
           </div>
           
