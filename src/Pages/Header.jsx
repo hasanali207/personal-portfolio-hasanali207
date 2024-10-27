@@ -31,7 +31,7 @@ const Header = () => {
   );
 
   return (
-    <div className="navbar px-20 flex justify-between  p-4 shadow-md relative bg-[#0a192f] h-[92px]">
+    <div className="navbar container flex justify-between bg-[#0a192f] h-[92px]">
       <div className="navbar-start ">
         <div className="dropdown z-50">
           <div tabIndex={0} role="button" className="btn text-white btn-ghost lg:hidden">
@@ -54,7 +54,9 @@ const Header = () => {
             {navitems}
           </ul>
         </div>
-        <Link to={'/'} className=" flex items-center"> <img className='w-24 h-24 flex items-center' src={logo} alt="" />  <span className='lg:flex sm:hidden  text-white hover:text-[#757575]'> hasandevpro@gmail.com </span>  </Link>
+        <Link to={'/'} className=" flex items-center"> <img className='w-24 h-24 flex items-center' src={logo} alt="" />   </Link>
+        <a href="mailto:hasandevpro@gmail.com" className='lg:flex sm:hidden  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a>
+         
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-white">
@@ -63,7 +65,7 @@ const Header = () => {
       </div>
 
       <div>
-        <button className="text-2xl font-bold  gradient-text w-36 ">
+        <button className="text-2xl font-bold   w-36  bg-gradient-to-r from-primary via-[#8750f7] to-[#ff00d3] bg-300% text-transparent bg-clip-text animate-gradient ">
           <Link to={'/contact'}>Hire Me</Link>
         </button>
       </div>

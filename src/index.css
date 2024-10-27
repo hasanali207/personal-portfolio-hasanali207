@@ -24,9 +24,8 @@ body {
   scrollbar-color: #8750f7 #2a1454;
 }
 .container{
-  max-width: 1120px !important;
+  max-width: 1160px !important;
   margin: 0 auto;
-  padding: 0px 80px;
 }
 
 .btn-con {
@@ -88,15 +87,14 @@ body {
 .hero-image {
   border-radius: 38px;
   width: 100%;
+  max-width: 550px;
   /* height: 450px; */
   height: 70vh;
   justify-content: center;
   align-items: center;
-  position: relative;
   transition: 0.4s;
   border: 2px solid #fff;
   transform: rotate(4.29deg);
-  margin-right: 200px;
 }
 .hero-image img {
   width: 100%;
